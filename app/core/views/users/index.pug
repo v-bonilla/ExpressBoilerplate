@@ -5,5 +5,17 @@ include ../_components/html
   +body()
     .container
       h3= section
+      h4 Create a new user:
+      form(method='POST' action='/users')
+        div.form-group
+          label(for='username') Username:
+          input#username(type='text', placeholder='Username' name='username')
+        div.form-group
+          label(for='email') Email:
+          input#email(type='email', placeholder='Email' name='email')
+        div.form-group
+          label(for='city') City:
+          input#city(type='text', placeholder='City' name='city')
+        button(type='submit') Submit
       p
         a(href='/') Home

@@ -11,12 +11,17 @@ body {
     margin: 0;
 }
 
-h3, p, form {
+h3, h4, p {
     width: 100%;
     text-align: center;
     font-size: 1.7rem;
     padding: 50px 0 0;
     margin: 0;
+}
+
+form {
+  margin: 0 auto;
+  width:400px;
 }
 
 p, label {
