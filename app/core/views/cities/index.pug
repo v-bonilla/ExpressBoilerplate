@@ -5,5 +5,10 @@ include ../_components/html
   +body()
     .container
       h3= section
+      form(method='POST' action='/cities')
+        div.form-group
+          label(for='city') City:
+          input#city(type='text', placeholder='City name' name='name')
+        button(type='submit') Submit
       p
         a(href='/') Home
